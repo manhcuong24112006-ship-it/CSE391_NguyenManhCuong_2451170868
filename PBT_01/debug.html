@@ -1,0 +1,80 @@
+lỗi 1: dòng 1 — <!doctype> sai — sửa thành <!doctype html>
+
+lỗi 2: dòng 4 — <title> chưa đóng — thêm </title>
+
+lỗi 3: dòng 5 — charset sai "utf8" — sửa thành "utf-8"
+
+lỗi 4: dòng 8 — <h1> không đóng đúng — sửa thành </h1>
+
+lỗi 5: dòng 12 — <a> không đóng — thêm </a>
+
+lỗi 6: dòng 12 — href="home" sai — sửa thành href="/home" hoặc "#"
+
+lỗi 7: dòng 18 — <img> thiếu alt và dấu ngoặc — thêm alt="..." và viết src="iphone.jpg"
+
+lỗi 8: dòng 20 — sai nesting <b> — phải đóng <b> trước </p>
+
+lỗi 9: dòng 27 — table thiếu semantic (<thead>, <tbody>)
+
+lỗi 10: dòng 36 — có 2 thẻ <main> — sửa thẻ thứ 2 thành <aside>
+
+lỗi 11: dòng 42 — <p> trong footer chưa đóng — thêm </p>
+
+lỗi 12: thiếu </html> ở cuối file
+
+sửa lại :
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Trang web</title>
+</head>
+<body>
+
+<h1>Welcome to ShopTLU</h1>
+
+<header>
+    <nav>
+        <a href="#">Trang chủ</a>
+        <a href="#">Sản phẩm</a>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h2>Sản phẩm hot</h2>
+        <img src="iphone.jpg" alt="iPhone 16 Pro">
+        <p>iPhone 16 Pro</p>
+        <p>Giá: <b>25.990.000đ</b></p>
+    </section>
+    
+    <section>
+        <h2>Thông tin</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Tên</th>
+                    <th>Giá</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>iPhone</td>
+                    <td>25tr</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</main>
+
+<aside>
+    <p>Sidebar content</p>
+</aside>
+
+<footer>
+    <p>Copyright 2026</p>
+</footer>
+
+</body>
+</html>
+
