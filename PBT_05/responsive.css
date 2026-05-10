@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    background: #1e293b;
+    color: white;
+
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    font-size: 28px;
+    cursor: pointer;
+}
+
+nav {
+    display: none;
+    flex-direction: column;
+
+    position: absolute;
+    top: 70px;
+    right: 20px;
+
+    background: white;
+    padding: 15px;
+
+    border-radius: 8px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #1e293b;
+
+    margin: 10px 0;
+}
+
+#menu-toggle:checked ~ nav {
+    display: flex;
+}
+
+.layout {
+    padding: 20px;
+}
+
+.sidebar {
+    display: none;
+}
+
+.ads {
+    display: none;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+
+    border-radius: 10px;
+    padding: 15px;
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    margin: 15px 0 10px;
+    font-size: 20px;
+}
+
+.card p {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+footer {
+    background: #1e293b;
+    color: white;
+
+    text-align: center;
+    padding: 20px;
+
+    margin-top: 30px;
+}
+
+/* TABLET */
+@media (min-width: 768px) {
+
+    .menu-icon {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        background: transparent;
+        padding: 0;
+    }
+
+    nav a {
+        color: white;
+        margin-left: 20px;
+    }
+
+    .sidebar {
+        display: block;
+
+        background: white;
+        padding: 20px;
+
+        border-radius: 10px;
+
+        margin-bottom: 20px;
+    }
+
+    .sidebar label {
+        margin-right: 15px;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card h3 {
+        font-size: 22px;
+    }
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+
+    .layout {
+        display: grid;
+
+        grid-template-columns: 200px 1fr 200px;
+
+        gap: 20px;
+    }
+
+    .products {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .ads {
+        display: block;
+    }
+
+    .ads img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .card h3 {
+        font-size: 24px;
+    }
+}
