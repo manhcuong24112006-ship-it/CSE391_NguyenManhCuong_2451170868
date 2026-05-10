@@ -142,3 +142,6 @@ Các loại selector đã dùng:
 - Descendant selector: nav a, tbody tr
 - Pseudo-class: :hover, :nth-child(even)
 - Group selector: th, td
+
+Câu B3
+p (0,0,1), .text (0,1,0), .highlight (0,1,0), p.text (0,1,1), p.highlight (0,1,1), .text.highlight (0,2,0), p.text.highlight (0,2,1), #demo (1,0,0), #demo.text (1,1,0), #demo.text.highlight (1,2,0) → kết quả cuối màu gold vì rule có specificity cao nhất thắng; nếu đổi thứ tự CSS thì không ảnh hưởng khi specificity khác nhau, chỉ khi bằng nhau thì rule viết sau mới thắng
