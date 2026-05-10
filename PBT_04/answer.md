@@ -62,3 +62,7 @@ TH2:dùng grid vì layout 2 chiều cần chia đều 3 cột và tự xuống d
 TH3:dùng grid vì chia layout rõ ràng theo cột
 TH4:dùng grid vì cần chia đều 4 cột
 TH5:dùng flexbox vì layout dọc
+Câu C2
+Lỗi 1 : do nút mua nằm ở dưới text nên nút mua bị nhảy vị trí
+Lỗi 2 : do hero content nằm trong hero do vậy khi dùng thẻ text align center thì chỉ có thể căn vị trí trong hero content thôi
+Lỗi 3 do flexbox cho phép các box co lại để chen cho đủ chỗ do trong hoàn cảnh này content quá lớn nên sidebar phải thu nhỏ để vừa với content
