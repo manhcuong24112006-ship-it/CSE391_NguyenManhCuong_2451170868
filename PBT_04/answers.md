@@ -4,7 +4,7 @@ Câu A1:
 -relative	vẫn chiếm	Dịch so với vị trí GỐC	có	Làm anchor cho absolute con, dịch nhẹ
 -absolute	bay khỏi flow	Bám vào cha RELATIVE gần nhất	có	Badge, dropdown, tooltip, overlay
 -fixed	không	Bám vào VIEWPORT	không cuộn theo trang	Chat button, cookie banner, header cố định
--sticky	vẫn chiếm	mặc định	dính khi scroll đến ngưỡng	Sticky header, sticky table header, sidebar
+-sticky	vẫn chiếm	mặc định	dính khi scroll đến ngưỡng	Sticky header, sticky table header, sidebar.
 
 absolute sẽ tham chiếu tới body khi phần tử không nằm trong thẻ nào khác
 absolute sẽ tham chiếu tới parent nếu có parent
