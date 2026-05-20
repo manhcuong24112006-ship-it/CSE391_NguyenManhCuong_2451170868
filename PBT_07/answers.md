@@ -118,3 +118,4 @@ console.log("Ngoài block:", a);
 // Output:
 // Trong block: 2
 // Ngoài block: 1
+
