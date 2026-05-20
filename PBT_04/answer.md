@@ -1,4 +1,4 @@
-Câu A1
+Câu A1:
 
 -static	vẫn chiếm	mặc định	top/left ko tác dụng	Mặc định — không cần viết
 -relative	vẫn chiếm	Dịch so với vị trí GỐC	có	Làm anchor cho absolute con, dịch nhẹ
