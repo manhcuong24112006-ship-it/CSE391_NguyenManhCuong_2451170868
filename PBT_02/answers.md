@@ -42,7 +42,7 @@ Câu C2
 pattern cmnd/cccd: pattern="[0-9]{12}", số tài khoản: pattern="[0-9]{10,15}"
 html5 validation không đủ an toàn cho ứng dụng ngân hàng vì chỉ chạy phía client nên có thể bị bypass bằng devtools hoặc gửi request trực tiếp nên bắt buộc phải validate lại ở backend
 html5 không làm được: kiểm tra trùng dữ liệu (email đã tồn tại), so sánh 2 field (confirm password/pin), validate logic phức tạp
-rủi ro nếu chỉ validate frontend: có thể gửi dữ liệu sai/độc hại lên server và có thể bị tấn công như sql injection do backend không kiểm tra lại
+rủi ro nếu chỉ validate frontend: có thể gửi dữ liệu sai/độc hại lên server và có thể bị tấn công như sql injection do backend không kiểm tra lại.
 
 Câu C1
 lỗi 1: dòng 2 — thiếu label, name, required — sửa: <label for="name">tên:</label> <input type="text" id="name" name="name" required>
