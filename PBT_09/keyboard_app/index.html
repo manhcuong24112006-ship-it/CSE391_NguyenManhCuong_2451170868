@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Accessibility App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Keyboard Accessibility Demo</h1>
+
+    <div class="gallery">
+        <button id="prevBtn" aria-label="Previous image">◀</button>
+
+        <div class="image-container">
+            <img id="galleryImage" src="" alt="Gallery Image">
+            <p id="imageInfo"></p>
+        </div>
+
+        <button id="nextBtn" aria-label="Next image">▶</button>
+    </div>
+
+    <p>
+        Phím tắt:
+        ← → chuyển ảnh |
+        1-9 chọn ảnh |
+        Space Play/Pause |
+        Ctrl+K mở Command Palette |
+        ESC đóng
+    </p>
+
+    <button id="sampleBtn" aria-label="Sample button">
+        Sample Button
+    </button>
+
+    <div id="paletteOverlay" class="overlay hidden">
+        <div class="palette">
+            <input
+                type="text"
+                id="commandInput"
+                placeholder="Type a command..."
+                aria-label="Command Search"
+            >
+
+            <ul id="commandList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
